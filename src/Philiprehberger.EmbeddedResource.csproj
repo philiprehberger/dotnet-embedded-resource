@@ -10,7 +10,7 @@
     <RootNamespace>Philiprehberger.EmbeddedResource</RootNamespace>
 
     <PackageId>Philiprehberger.EmbeddedResource</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Fluent access to embedded resources with string, stream, byte array, and JSON deserialization support.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

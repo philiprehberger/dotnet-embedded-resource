@@ -14,6 +14,8 @@ dotnet add package Philiprehberger.EmbeddedResource
 
 ## Usage
 
+### Reading Resources
+
 ```csharp
 using Philiprehberger.EmbeddedResource;
 
@@ -25,15 +27,32 @@ byte[] data = EmbeddedResource.ReadBytes("Assets/logo.png");
 
 // Open as stream
 using var stream = EmbeddedResource.OpenStream("Data/config.xml");
+```
 
-// Deserialize JSON
+### JSON Deserialization
+
+```csharp
+using Philiprehberger.EmbeddedResource;
+
+// Deserialize a JSON resource directly into a typed object
 var settings = EmbeddedResource.ReadJson<AppSettings>("Config/defaults.json");
 
-// List available resources
+Console.WriteLine(settings.Theme);   // "dark"
+Console.WriteLine(settings.MaxRetries); // 3
+```
+
+### Listing and Filtering Resources
+
+```csharp
+using Philiprehberger.EmbeddedResource;
+
+// List all embedded resource names in the calling assembly
 string[] all = EmbeddedResource.List();
+
+// Filter by pattern
 string[] templates = EmbeddedResource.List("*.html");
 
-// Use a specific assembly
+// Read from a specific assembly
 var assembly = typeof(MyPlugin).Assembly;
 string text = EmbeddedResource.ReadString("plugin-config.json", assembly);
 ```
