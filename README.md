@@ -3,6 +3,7 @@
 [![CI](https://github.com/philiprehberger/dotnet-embedded-resource/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-embedded-resource/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.EmbeddedResource.svg)](https://www.nuget.org/packages/Philiprehberger.EmbeddedResource)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-embedded-resource)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Fluent access to embedded resources with string, stream, byte array, and JSON deserialization support.
 
@@ -83,4 +84,4 @@ dotnet build src/Philiprehberger.EmbeddedResource.csproj --configuration Release
 
 ## License
 
-MIT
+[MIT](LICENSE)
